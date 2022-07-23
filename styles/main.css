@@ -1,0 +1,22 @@
+.main__resource {
+    background-color: rgba(0, 204, 255, 0.01);
+}
+
+.experience {
+    background-color: rgba(0, 204, 255, 0.01);
+}
+
+
+.section {
+    color: silver;
+}
+
+
+@media (min-width: 768px) {
+    .experience .img {
+        position: absolute;
+        left: calc(50% + 50px);
+        width: 600px;
+        object-fit: cover;
+    }
+}
