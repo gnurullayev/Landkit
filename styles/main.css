@@ -6,11 +6,9 @@
     background-color: rgba(0, 204, 255, 0.01);
 }
 
-
 .section {
     color: silver;
 }
-
 
 @media (min-width: 768px) {
     .experience .img {
