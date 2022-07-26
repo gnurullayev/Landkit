@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="./styles/main.css">
     <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body class="bg-light bg-opacity-50">
     <header class="header w-100 py-4">
@@ -36,7 +37,7 @@
                     </li>
                 </ul>
     
-                <a href="" class="btn btn-primary d-none d-md-inline-block">Buy nov</a>
+                <a href="#" class="btn-buy btn btn-primary border-0  d-none d-md-inline-block">Buy nov</a>
                 <button class="btn d-inline-block d-md-none  border-0 " type="button">
                     <i class="bi bi-list fs-2 text-secondary"></i>
                 </button> 
@@ -48,14 +49,14 @@
         <section class="main__hero hero pt-5">
             <div class="hero__container container">
                 <div class="hero__inner row gy-5 flex-row-reverse">
-                    <div class="col-md-6 ">
+                    <div class="col-md-6" data-aos="fade-up">
                         <img src="./imgs/hero-img.png" alt="Hero img" width="100%" height="100%">
                     </div>
 
-                    <div class="col-md-6 ">
+                    <div class="col-md-6 " data-aos="fade-up">
                         <div class="hero__content text-center text-md-start mt-md-5">
                             <h class="hero__title fs-1 fw-normal" >
-                                Welcome to <span class="hero__title--span text-primary">Landkit</span>.
+                                Welcome to <span class="hero__title--span text-primary">Landkit</span>. <br>
                                 Develop anything.
                             </h>
 
@@ -78,7 +79,7 @@
         <section class="main__intro intro pt-5">
             <div class="intro__container container">
                 <ul class="intro__inner row  list-unstyled gy-4">
-                    <li class="col-md-4">
+                    <li class="col-md-4" data-aos="fade-up">
                         <div class="content pe-5">
                             <i class="bi bi-toggles fs-1 mb-5 text-primary "></i>
 
@@ -91,7 +92,7 @@
                             </p>
                         </div>
                     </li>
-                    <li class="col-md-4">
+                    <li class="col-md-4" data-aos="fade-up">
                         <div class="content pe-5">
                             <i class="bi bi-columns-gap fs-1 mb-5 text-primary"></i>
 
@@ -104,7 +105,7 @@
                             </p>
                         </div>
                     </li>
-                    <li class="col-md-4">
+                    <li class="col-md-4" data-aos="fade-up">
                         <div class="content pe-5">
                             <i class="bi bi-code-slash fs-1 mb-5 text-primary"></i>
 
@@ -168,7 +169,7 @@
         <section class="main__resource resource py-5 ">
             <div class="resource__container container">
                 <div class="resource__inner row py-3 gy-5  flex-column-reverse flex-md-row">
-                    <div class="col-12 col-md-5 col-lg-5">
+                    <div class="col-12 col-md-5 col-lg-5" data-aos="fade-right">
                         <div class="card bg-white border-0 shadow-lg ">
                             <img class="card-img" src="./imgs/cart-image.jpg" alt="Cart img" width="100%" height="100%">
 
@@ -190,7 +191,7 @@
                         </div>
                     </div>
 
-                    <div class="col-12 col-md-7 col-lg-7 ps-lg-5 pt-lg-5 pe-lg-5 ">
+                    <div class="col-12 col-md-7 col-lg-7 ps-lg-5 pt-lg-5 pe-lg-5 " data-aos="fade-left">
                         <div class="content pt-md-3 mt-lg-5 ms-md-3">
                             <h3 class="title mb-3 fs-4 lh-base fw-semibold">
                                 The most useful resourcebr <br>
@@ -244,7 +245,7 @@
         <section class="main__experience experience position-relative overflow-hidden pt-md-5 pb-5">
             <div class="experience__container container mb-5">
                 <div class="experience__inner row">
-                    <div class="col-12 col-md-7 col-xl-6">
+                    <div class="col-12 col-md-7 col-xl-6" data-aos="fade-right">
                         <div class="content">
                             <h3 class="title mb-4 fs-3 lh-base fw-normal">
                                 We have lots of experience <br>
@@ -282,16 +283,480 @@
                             </ul>
                         </div>
                     </div>
-                    <div class="col-12 col-md-5 col-xl-6">
+                    <div class="col-12 col-md-5 col-xl-6" data-aos="fade-left">
                         <div class="content">
-                            <img class="img img-fluid shadow-lg" src="./imgs/experience.jpg" alt="" width="100%" height="100%">
+                            <img class="experience-img img img-fluid rounded-4 shadow-lg" src="./imgs/experience.jpg" alt="" width="100%" height="100%">
                         </div>
                     </div>
                 </div>
             </div>
         </section>
+
+        <section class="main__biggest biggest pb-5">
+            <div class="biggest__container container">
+                <div class="biggest__inner text-center">
+                    <h3 class="biggest__title fs-3 fw-normal mb-4">
+                        Our customers are our biggest fans.
+                    </h3>
+
+                    <p class="biggest__desc mb-5 fs-5 text-primary text-opacity-50">
+                        We don't like to brag, but we don't mind letting our customers do it for us. Here are a few nice things folks have said about our themes over the years.
+                    </p>
+
+                    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                          <div class="carousel-item active bg-white">
+                            <div class="row">
+                                <div class="col-12 col-md-6">
+                                    <div class="content">
+                                        <img src="./imgs/carousel-img1.jpg" class="d-block w-100" alt="..." width="100%" height="100%">
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-6 px-lg-5">
+                                    <div class="content text-center pt-4 pt-md-0 pt-lg-5 px-0 pe-md-4 px-lg-0 px-xxl-5 pb-4 pb-md-0">
+                                        <span class="mt-xxl-5 d-inline-block">
+                                            <img src="./imgs/Airbnb-Logo.wine (1).svg" alt="">
+                                        </span>
+
+                                        <blockquote class="quote fs-5 mt-3 mt-md-0 mt-lg-4 mb-xl-5"> 
+                                            “I've never used a theme as versatile and flexible as Landkit. It's my go to for building landing sites on almost any project.”                                        
+                                        </blockquote>
+
+                                        <span class="text-primary text-opacity-25 fw-bold fs-6 mt-3 mt-md-0 mt-lg-5 ">
+                                            RUSS D'SA
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                          </div>
+                          <div class="carousel-item bg-white">
+                            <div class="row">
+                                <div class="col-12 col-md-6">
+                                    <div class="content">
+                                        <img src="./imgs/carousel-img2.jpg" class="d-block w-100" alt="..." width="100%" height="100%">
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-6 px-lg-5">
+                                    <div class="content text-center  pt-4 pt-md-0 pt-lg-5 px-0 pe-md-4 px-lg-0 px-xxl-5 pb-4 pb-md-0">
+                                        <span class="mt-xxl-5 d-inline-block">
+                                            <img src="./imgs/instagram.svg" alt="">
+                                        </span>
+
+                                        <blockquote class="quote fs-5 mt-3 mt-md-0 mt-lg-4 mb-xl-5"> 
+                                            “I've never used a theme as versatile and flexible as Landkit. It's my go to for building landing sites on almost any project.”                                        
+                                        </blockquote>
+                                        
+                                        <span class="text-primary text-opacity-25 fw-bold fs-6 mt-3 mt-md-0 mt-lg-5 ">
+                                            DAVE GAMACHE
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                          </div>
+                        </div>
+                        <button class="carousel-control-prev justify-content-start " type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                          <span class="carousel-control-prev-icon bg-primary rounded-circle " aria-hidden="true"></span>
+                          <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next justify-content-end" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                          <span class="carousel-control-next-icon bg-primary rounded-circle" aria-hidden="true"></span>
+                          <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="main-business business py-5">
+            <div class="business__container container">
+                <div class="business__inner row flex-column-reverse pt-5 flex-md-row align-items-center">
+                    <div class="col-12 col-md-6">
+                        <div class="content pt-5">
+                            <h3 class="title fs-3 fw-normal lh-sm mb-4">
+                                Stay focused on your business. <br>
+                                <span class="span text-primary">
+                                    Let us handle the design
+                                </span>.
+                            </h3>
+
+                            <p class="text fs-5 text-primary text-opacity-50 mb-5">
+                                You have a business to run. Stop worring about cross-browser bugs, designing new pages, keeping your components up to date. Let us do that for you.
+                            </p>
+
+                           <div class="row">
+                                <div class="col-3">
+                                    <div class="content fs-5">
+                                        100% <br>
+                                        <span class="direction text-primary text-opacity-50">Satisfaction</span>
+                                    </div>
+                                </div>
+
+                                <div class="col-3">
+                                    <div class="content fs-5">
+                                        24/7 <br>
+                                        <span class="direction text-primary text-opacity-50">Support</span>
+                                    </div>
+                                </div>
+
+                                <div class="col-3">
+                                    <div class="content fs-5">
+                                        100k+ <br>
+                                        <span class="direction text-primary text-opacity-50">Sales</span>
+                                    </div>
+                                </div>
+                           </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12  col-md-6">
+                        <img class="img-fluid" src="./imgs/bussines.png" alt="" width="100%" height="100%">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="main__simple simple py-5">
+            <div class="simple__container container">
+                <div class="simple__inner text-center">
+                    <h3 class="title fw-normal fs-3 mb-4">
+                        Fair, simple pricing for all.
+                    </h3>
+
+                    <p class="question__text lh-lg fs-5 text-primary text-opacity-50 mb-3 d-flex my-0 mx-auto">
+                        All types of businesses need access to development resources, so we give you the option to decide how much you need to use.
+                    </p>
+
+                    <div class="pogination mb-4 d-flex align-items-center justify-content-center">
+                        <span class="annual text-primary text-opacity-25">Annual</span>
+                        <button class="button d-inline-block mx-2" type="button"><span class="btn-in"></span></button>
+                        <span class="monthly text-primary text-opacity-25">Monthly</span>
+                    </div>
+
+                    <div class="row mb-5">
+                        <div class="col-12 col-md-6 mb-4 mb-md-0 position-relative standart" data-aos="fade-up-right">
+                            <div class="card h-100 pt-5 shadow-lg border-0">
+                                <h4 class="pt-3 mb-4">
+                                    <span class="d-inline-block py-2 px-3 bg-primary bg-opacity-10 rounded-pill text-primary fw-normal fs-6">STANDARD</span>
+                                </h4>
+
+                                <div class="sum fs-1 mb-5">
+                                    <span class="fs-4 position-relative top-5">$</span>49<span class="fs-4">/mo</span> <br>
+                                    <span class="fs-4 text-primary text-opacity-50">per seat</span>
+                                </div>
+
+                                <ul class=" list-unstyled text-start fs-5 px-5">
+                                    <li class="">
+                                        <span class="check rounded-circle bg-success bg-opacity-10 text-success fs-6 ps-1 me-4">
+                                            <i class="bi bi-check"></i>
+                                        </span>
+                                        Rich, responsive landing pages
+                                    </li>
+
+                                    <li class="">
+                                        <span class="check rounded-circle bg-success bg-opacity-10 text-success fs-6 ps-1 me-4">
+                                            <i class="bi bi-check"></i>
+                                        </span>
+                                        100+ styled components
+                                    </li>
+
+                                    <li class="">
+                                        <span class="check rounded-circle bg-success bg-opacity-10 text-success fs-6 ps-1 me-4">
+                                            <i class="bi bi-check"></i>
+                                        </span>
+                                        Flexible, simple license
+                                    </li>
+
+                                    <li class="">
+                                        <span class="check rounded-circle bg-success bg-opacity-10 text-success fs-6 ps-1 me-4">
+                                            <i class="bi bi-check"></i>
+                                        </span>
+                                        Speedy build tooling
+                                    </li>
+
+                                    <li class="">
+                                        <span class="check rounded-circle bg-success bg-opacity-10 text-success fs-6 ps-1 me-4">
+                                            <i class="bi bi-check"></i>
+                                        </span>
+                                        6 months free support included
+                                    </li>
+                                </ul>
+
+                                <div class="card__footer bg-primary py-3 ">
+                                    <a class="text-white fw-normal text-decoration-none fs-4" href="#">Get it now</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-md-6 enterprise my-md-2" data-aos="fade-up-left">
+                            <div class="card pt-5 h-100 border-0">
+                                <h4 class="pt-3 ">
+                                    <span class="d-inline-block py-2 px-3 bg-primary bg-opacity-10 rounded-pill text-primary fw-normal fs-6">ENTERPRISE</span>
+                                </h4>
+
+                                <div class="card-body fs-5 px-4 px-md-5 mx-lg-5 text-primary text-opacity-50 lh-md-lg d-flex align-items-center">
+                                    
+                                    We offer variable pricing with discounts for larger organizations. Get in touch with us and we’ll figure out something that works for everyone.
+                                </div>
+
+                                <div class="card__footer bg-primary bg-opacity-25 py-3">
+                                    <a class="text-primary fw-normal text-decoration-none fs-4" href="#" >Contact us</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="main-question question">
+            <div class="question__container container">
+                <div class="question__inner text-center">
+                    <div class="question__inner row">
+                        <div class="col-12 col-md-6 mb-4">
+                            <div class="question__content text-start ps-5">
+                                <h4 class="text-white fs-4 ms-4 fw-normal">Can I use Landkit for my clients?</h4>
+    
+                                <p class="text ms-4 text-secondary text-opacity-75 fs-5">
+                                    Absolutely. The Bootstrap Themes license allows you to build a website for personal use or for a client.
+                                </p>
+                            </div>
+                        </div>
+    
+                        <div class="col-12 col-md-6 mb-4">
+                            <div class="question__content text-start ps-5">
+                                <h4 class="text-white fs-4 ms-4 fw-normal">Is there a money back guarantee?</h4>
+    
+                                <p class="text ms-4 text-secondary text-opacity-75 fs-5">
+                                    Yup! Bootstrap Themes come with a satisfaction guarantee. Submit a return and get your money back.
+                                </p>
+                            </div>
+                        </div>
+    
+                        <div class="col-12 col-md-6 mb-4">
+                            <div class="question__content text-start ps-5">
+                                <h4 class="text-white fs-4 ms-4 fw-normal">Do I get free updates?</h4>
+    
+                                <p class="text ms-4 text-secondary text-opacity-75 fs-5">
+                                    Yes. We update all of our themes with each Bootstrap update, plus are constantly adding new components, pages, and features to our themes.
+                                </p>
+                            </div>
+                        </div>
+    
+                        <div class="col-12 col-md-6 mb-4">
+                            <div class="question__content text-start ps-5 ">
+                                <h4 class="text-white fs-4 ms-4 fw-normal">Does it work with Rails? React? Laravel?<h4>
+    
+                                <p class="text ms-4 text-secondary text-opacity-75 fs-5">
+                                    Yes. Landkit has basic CSS/JS files you can include. If you want to enable deeper customization, you can integrate it into your assets pipeline or build processes.
+                                </p>
+                            </div>
+                        </div>
+    
+                    </div>
+    
+                    <button class="border-0 bg-primary bg-opacity-10 d-inline-block py-2 px-3 text-white text-opacity-25 mx-auto rounded-pill">GET STARTED</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="main__time time py-5">
+            <div class="container">
+                <div class="inner text-center">
+                    <h3 class="title text-white fs-1 fw-normal mb-3">
+                        Get Landkit and save your time.
+                    </h3>
+
+                    <p class="time__desc text-secondary text-opacity-75 fs-5 mx-auto">
+                        Stop wasting time trying to do it the "right way" and build a site from scratch. Landkit is faster, easier, and you still have complete control.
+                    </p>
+
+                    <button class="btn btn-success border-0 shadow-none text-white fw-bold fs-5">
+                        Buy it now
+                        <i class="bi bi-arrow-right"></i>
+                    </button>
+                </div>
+            </div>
+        </section>
     </main>
 
+    <footer class="footer py-5">
+        <div class="footer__container container">
+            <div class="footer__inner row">
+                <div class="col-12 col-md-3 mb-4">
+                    <div class="content">
+                        <a href="./index.html" class="header__logo logo d-inline-block mb-3">
+                            <img class="" src="./imgs/brand.svg" alt="">
+                        </a>
+
+                        <p class="text-decoration-none text-secondary text-opacity-75 fs-5 mb-2">
+                            A better way to build.
+                        </p>
+
+                        <ul class="content list-unstyled d-flex ">
+                            <li class="">
+                                <a href="#" class="text-decoration-none text-secondary text-opacity-50 fs-5">
+                                    <i class="bi bi-instagram fs-4"></i>
+                                </a>
+                            </li>
+
+                            <li class=" ms-3">
+                                <a href="#" class="text-decoration-none text-secondary text-opacity-50 fs-5">
+                                    <i class="bi bi-facebook fs-4"></i>
+                                </a>
+                            </li>
+
+                            <li class=" ms-3">
+                                <a href="#" class="text-decoration-none text-secondary text-opacity-50 fs-5">
+                                    <i class="bi bi-twitter fs-4"></i>
+                                </a>
+                            </li>
+
+                            <li class=" ms-3">
+                                <a href="#" class="text-decoration-none text-secondary text-opacity-50 fs-5">
+                                    <i class="bi bi-pinterest fs-4"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-12 col-md-9">
+                    <div class="row">
+                        <div class="col-6 col-lg-3 mb-4">
+                            <ul class="content list-unstyled">
+                                <p class="text fs-6 fw-normal text-secondary text-opacity-75 mb-1">PRODUCTS</p>
+
+                                <li class="mb-2">
+                                    <a href="#" class="text-decoration-none text-secondary text-opacity-50 fs-5">
+                                        Page Builder
+                                    </a>
+                                </li>
+
+                                <li class="mb-2">
+                                    <a href="#" class="text-decoration-none text-secondary text-opacity-50 fs-5">
+                                        UI Kit
+                                    </a>
+                                </li>
+
+                                <li class="mb-2">
+                                    <a href="#" class="text-decoration-none text-secondary text-opacity-50 fs-5">
+                                        Styleguide
+                                    </a>
+                                </li>
+
+                                <li class="mb-2">
+                                    <a href="#" class="text-decoration-none text-secondary text-opacity-50 fs-5">
+                                        Documentation
+                                    </a>
+                                </li>
+
+                                <li class="mb-2">
+                                    <a href="#" class="text-decoration-none text-secondary text-opacity-50 fs-5">
+                                        Changelog
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="col-6 col-lg-3 mb-4">
+                            <ul class="content list-unstyled">
+                                <p class="text fs-6 fw-normal text-secondary text-opacity-75 mb-1">SERVICES</p>
+
+                                <li class="mb-2">
+                                    <a href="#" class="text-decoration-none text-secondary text-opacity-50 fs-5">
+                                        Documentation
+                                    </a>
+                                </li>
+
+                                <li class="mb-2">
+                                    <a href="#" class="text-decoration-none text-secondary text-opacity-50 fs-5">
+                                        Changelog
+                                    </a>
+                                </li>
+
+                                <li class="mb-2">
+                                    <a href="#" class="text-decoration-none text-secondary text-opacity-50 fs-5">
+                                        Pagebuilder
+                                    </a>
+                                </li>
+
+                                <li class="mb-2">
+                                    <a href="#" class="text-decoration-none text-secondary text-opacity-50 fs-5">
+                                        UI Kit
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="col-6 col-lg-3 mb-4">
+                            <ul class="content list-unstyled">
+                                <p class="text fs-6 fw-normal text-secondary text-opacity-75 mb-1">CONNECT</p>
+
+                                <li class="mb-2">
+                                    <a href="#" class="text-decoration-none text-secondary text-opacity-50 fs-5">
+                                        Page Builder
+                                    </a>
+                                </li>
+
+                                <li class="mb-2">
+                                    <a href="#" class="text-decoration-none text-secondary text-opacity-50 fs-5">
+                                        UI Kit
+                                    </a>
+                                </li>
+
+                                <li class="mb-2">
+                                    <a href="#" class="text-decoration-none text-secondary text-opacity-50 fs-5">
+                                        Styleguide
+                                    </a>
+                                </li>
+
+                                <li class="mb-2">
+                                    <a href="#" class="text-decoration-none text-secondary text-opacity-50 fs-5">
+                                        Documentation
+                                    </a>
+                                </li>
+
+                                <li class="mb-2">
+                                    <a href="#" class="text-decoration-none text-secondary text-opacity-50 fs-5">
+                                        Changelog
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="col-6 col-lg-3 mb-4">
+                            <ul class="content list-unstyled">
+                                <p class="text fs-6 fw-normal text-secondary text-opacity-75 mb-1">LEGAL</p>
+
+                                <li class="mb-2">
+                                    <a href="#" class="text-decoration-none text-secondary text-opacity-50 fs-5">
+                                        Documentation
+                                    </a>
+                                </li>
+
+                                <li class="mb-2">
+                                    <a href="#" class="text-decoration-none text-secondary text-opacity-50 fs-5">
+                                        Changelog
+                                    </a>
+                                </li>
+
+                                <li class="mb-2">
+                                    <a href="#" class="text-decoration-none text-secondary text-opacity-50 fs-5">
+                                        Pagebuilder
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>                     
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
     <script src="./bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+      </script>
 </body>
 </html>
